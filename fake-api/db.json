@@ -1,0 +1,23 @@
+{
+    "users" : [
+        {
+            "id" : 1,
+            "phone" : "085813183470",
+            "email" : "",
+            "password" : "12345"
+        }
+    ],
+    "products" : [
+        {
+            "id" : 1,
+            "name" : "Adidas Adi Ease",
+            "price" : 1200000,
+            "discount" : 10,
+            "image1" : "url1",
+            "image2" : "url2",
+            "image3" : "",
+            "brand" : "Adidas",
+            "stock" : 10
+        }
+    ]
+}

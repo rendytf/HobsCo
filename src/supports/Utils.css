@@ -1,0 +1,53 @@
+:root {
+    --main: #0da9ef;
+    --secondary: #606975;
+    --dark: #222831;
+    --light: #dbe2ef;
+    --main-dark: #374250;
+}
+
+.hobs-main{
+    color: var(--main);
+}
+.hobs-main-dark{
+    color: var(--main-dark);
+}
+.hobs-secondary{
+    color: var(--secondary);
+}
+.hobs-dark{
+    color: var(--dark);
+}
+.hobs-light{
+    color: var(--light);
+}
+
+.hobs-bg-main{
+    background-color: var(--main);
+}
+.hobs-bg-main-dark{
+    background-color: var(--main-dark);
+}
+.hobs-bg-secondary{
+    background-color: var(--secondary);
+}
+.hobs-bg-dark{
+    background-color: var(--dark);
+}
+.hobs-bg-light{
+    background-color: var(--light);
+}
+
+.hobs-btn-main{
+    color: #fff;
+    background-color: var(--main);
+    border-color: var(--main);
+}
+.hobs-btn-main:hover, .hobs-btn-main:active{
+    color: #fff;
+    background-color: var(--main-dark);
+    border-color: var(--main-dark);
+}
+.hobs-btn-main:focus{
+    box-shadow: 0 0 0 0.2rem rgb(55 66 80 / 50%);
+}

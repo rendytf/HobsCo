@@ -1,23 +1,356 @@
 {
-    "users" : [
-        {
-            "id" : 1,
-            "phone" : "085813183470",
-            "email" : "",
-            "password" : "12345"
-        }
-    ],
-    "products" : [
-        {
-            "id" : 1,
-            "name" : "Adidas Adi Ease",
-            "price" : 1200000,
-            "discount" : 10,
-            "image1" : "url1",
-            "image2" : "url2",
-            "image3" : "",
-            "brand" : "Adidas",
-            "stock" : 10
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "phone": "085813183470",
+      "email": "",
+      "password": "12345"
+    },
+    {
+      "phone": "085717110310",
+      "email": "",
+      "password": "54321",
+      "id": 2
+    },
+    {
+      "email": "jamie@example.com",
+      "phone": "",
+      "password": "jamie123",
+      "id": 3
+    },
+    {
+      "email": "ferdi@example.com",
+      "phone": "",
+      "password": "februari",
+      "id": 4
+    },
+    {
+      "email": "yane@example.com",
+      "phone": "",
+      "password": "yane123",
+      "id": 5
+    },
+    {
+      "email": "xylon@example.com",
+      "phone": "",
+      "password": "xylon12",
+      "id": 6
+    },
+    {
+      "email": "gibran@example.com",
+      "phone": "",
+      "password": "gibran123",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Independent FTS Skull T-Shirt - White",
+      "brand": "Independent Truck",
+      "category": "Tshirt",
+      "price": 343000,
+      "discount": 0,
+      "stock": 36,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/193172199228-2.1613119343.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/193172199228-1.1613119343.jpg",
+      "isDraft": true
+    },
+    {
+      "id": 2,
+      "name": "Vans Vintage Beach T-Shirt - White",
+      "brand": "Vans",
+      "category": "Tshirt",
+      "price": 300000,
+      "discount": 10,
+      "Stock": 24,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/193391848433-1.1614848151.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/193391848433-2.1614848151.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 3,
+      "name": "Diamond Supply Co. Blueprint T-Shirt - Heather",
+      "brand": "Diamond Supply Co",
+      "category": "Tshirt",
+      "price": 425000,
+      "discount": 10,
+      "Stock": 5,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/190506251102-1.1614847867.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/190506251102-2.1614847867.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 4,
+      "name": "Brixton Crest X T-Shirt Hunter - Green",
+      "brand": "Brixton",
+      "category": "Tshirt",
+      "price": 350000,
+      "discount": 15,
+      "Stock": 15,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/888588560723-1.1614674850.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/888588560723-2.1614674850.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 5,
+      "name": "The Hundreds Former Lovers T-Shirt - Pink",
+      "brand": "The Hundreds",
+      "category": "Tshirt",
+      "price": 450000,
+      "discount": 0,
+      "Stock": 50,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/9/9/999999334954-1.1614290762.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/9/9/999999334954-2.1614290762.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 6,
+      "name": "HUF x Haze Brush Tie Dye T-shirt - Black",
+      "brand": "HUF",
+      "category": "Tshirt",
+      "price": 450000,
+      "discount": 5,
+      "Stock": 8,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/888401866742-1.1614085881.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/888401866742-2.1614085881.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 7,
+      "name": "Grizzly Family Ties T-Shirt - Tie Dye",
+      "brand": "Grizzly",
+      "category": "Tshirt",
+      "price": 450000,
+      "discount": 5,
+      "Stock": 12,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/4/840021260348-1.1614108049.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/4/840021260348-2.1614108049.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 8,
+      "name": "Obey Statue Icon T-Shirt - Black",
+      "brand": "Obey",
+      "category": "Tshirt",
+      "price": 400000,
+      "discount": 0,
+      "Stock": 36,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/193259498701-2.1613551430.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/193259498701-1.1613551430.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 9,
+      "name": "Girl Smoke Session T-Shirt - White",
+      "brand": "Girl",
+      "category": "Tshirt",
+      "price": 275000,
+      "discount": 5,
+      "Stock": 24,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/889846205608-2.1612947188.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/889846205608-1.1612947188.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 10,
+      "name": "Brixton Rival Line T-Shirt - Joe Blue",
+      "brand": "Brixton",
+      "category": "Tshirt",
+      "price": 275000,
+      "discount": 5,
+      "Stock": 24,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/888588561072-1.1612428607.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/888588561072-2.1612428607.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 11,
+      "name": "Venture Wings Sbl T-Shirt - White/Multi",
+      "brand": "Venture Truck",
+      "category": "Tshirt",
+      "price": 255000,
+      "discount": 5,
+      "Stock": 24,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/888560214392-1.1612255641.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/888560214392-2.1612255641.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 12,
+      "name": "Santa Cruz OGSC Spiral T-Shirt - Antique Gold",
+      "brand": "Santa Cruz",
+      "category": "Tshirt",
+      "price": 275000,
+      "discount": 10,
+      "Stock": 36,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/193172201969-1.1612255664.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/193172201969-2.1612255664.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 13,
+      "name": "Santa Cruz Youth Rad Dot T-Shirt - Black",
+      "brand": "Santa Cruz",
+      "category": "Tshirt",
+      "price": 235000,
+      "discount": 5,
+      "Stock": 5,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/193172200276-2.1612255659.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/193172200276-1.1612255659.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 14,
+      "name": "Spitfire Steady Rockin T-Shirt - Military Green/Yellow",
+      "brand": "Spitfire",
+      "category": "Tshirt",
+      "price": 275000,
+      "discount": 5,
+      "Stock": 34,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/888560210660-2.1611305740.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/8/8/888560210660-1.1611305739.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 15,
+      "name": "Loser Machine Rosarito Shirt - White",
+      "brand": "Loser Machine",
+      "category": "Shirt",
+      "price": 975000,
+      "discount": 15,
+      "Stock": 46,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/8/8/886731407550-1.1616057226.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/8/8/886731407550-2.1616057227.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 16,
+      "name": "The Hundreds Prey Shirt - Black",
+      "brand": "The Hundreds",
+      "category": "Shirt",
+      "price": 1200000,
+      "discount": 5,
+      "Stock": 36,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/B/Q/BQ129E9-1.1615537816.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/B/Q/BQ129E9-2.1615537816.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 17,
+      "name": "Primitive Haight Shirt - Black",
+      "brand": "Primitive",
+      "category": "Shirt",
+      "price": 700000,
+      "discount": 0,
+      "Stock": 24,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/194942015571-1.1614427443.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/194942015571-2.1614427443.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 18,
+      "name": "Vans Houser Shirt - Love Hate",
+      "brand": "Vans",
+      "category": "Shirt",
+      "price": 650000,
+      "discount": 0,
+      "Stock": 30,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/194905491954-1.1612255842.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/194905491954-2.1612255842.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 19,
+      "name": "RVCA Mahalo Shirt - Black",
+      "brand": "RVCA",
+      "category": "Shirt",
+      "price": 835000,
+      "discount": 10,
+      "Stock": 40,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/194687225082-1.1612255842.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/194687225082-2.1612255842.jpg",
+      "isDraft": false
+    },
+    {
+      "id": 20,
+      "name": "Element Seal Bp T-Shirt - Optic White",
+      "brand": "Element",
+      "category": "Tshirt",
+      "price": 275000,
+      "discount": 5,
+      "Stock": 46,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/194844010445-1.1608798180.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/550x550/17f82f742ffe127f42dca9de82fb58b1/1/9/194844010445-2.1608798180.jpg",
+      "isDraft": true
+    },
+    {
+      "id": 21,
+      "name": "Santa Cruz Classic Dot Hoodie - Multi",
+      "brand": "Santa Cruz",
+      "category": "Hoodies and Sweatshirt",
+      "price": 907000,
+      "discount": 0,
+      "Stock": 24,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/193172135233-1.1598087514.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/193172135233-2.1598087514.jpg",
+      "isDraft": true
+    },
+    {
+      "id": 22,
+      "name": "Staple All Over Pigeon Hoodie - Heather Grey",
+      "brand": "Staple",
+      "category": "Hoodies and Sweatshirt",
+      "price": 1040000,
+      "discount": 10,
+      "Stock": 36,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/193069230713-1.1616057025.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/193069230713-2.1616057025.jpg",
+      "isDraft": true
+    },
+    {
+      "id": 23,
+      "name": "The Hundreds Terrace Hoodie - Khaki",
+      "brand": "The Hundreds",
+      "category": "Hoodies and Sweatshirt",
+      "price": 1280000,
+      "discount": 10,
+      "Stock": 24,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/9/9/999999316097-1.1615538051.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/9/9/999999316097-2.1615538051.jpg",
+      "isDraft": true
+    },
+    {
+      "id": 24,
+      "name": "HUF x Haze Handstyle Sweatshirt - Athletic Heather",
+      "brand": "HUF",
+      "category": "Hoodies and Sweatshirt",
+      "price": 935000,
+      "discount": 0,
+      "Stock": 50,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/8/8/888401871265-1.1614263116.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/8/8/888401871265-2.1614263116.jpg",
+      "isDraft": true
+    },
+    {
+      "id": 25,
+      "name": "Creature Logo Crew Neck Sweatshirt - Forest Camo",
+      "brand": "Creature",
+      "category": "Hoodies and Sweatshirt",
+      "price": 790000,
+      "discount": 10,
+      "Stock": 50,
+      "image1": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/193172191956-1.1611307158.jpg",
+      "image2": "https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/9/193172191956-2.1611307158.jpg",
+      "isDraft": true
+    }
+  ],
+  "carts": [
+    {
+      "id": 4,
+      "id_user": 4,
+      "id_product": 3,
+      "qty": 5
+    }
+  ]
 }

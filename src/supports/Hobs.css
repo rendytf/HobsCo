@@ -1,41 +1,261 @@
-.hobs-clickable-el{
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
 }
 
+.hobs-clickable-el {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10 Edge */
+    user-select: none; /* Standard */
+}
+
+.hobs-form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: none;
+}
+
+/* Headers */
 .hobs-navbar {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: .5rem 1rem;
+    /* min-height: 4rem; */
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 10%);
 }
 
 .hobs-branding {
     display: inline-block;
+    color: #20b8f6;
+    text-decoration: none;
     padding-top: .3125rem;
     padding-bottom: .3125rem;
     margin-right: 1rem;
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10 Edge */
+    user-select: none; /* Standard */
 }
 
+.hobs-branding:hover {
+    color: #20b8f6;
+    text-decoration: none;
+}
+
+.hobs-navbar-menu > ul > li > a, .hobs-nav-link {
+    color: #333333;
+    text-decoration: none;
+    letter-spacing: .5px;
+    font-weight: 550;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.hobs-navbar-menu > ul > li > a:hover, .hobs-nav-link:hover {
+    color: #20b8f6;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .hobs-branding {
+        transform: translateX(-50%);
+        left: 50%;
+        position: absolute;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+}
+
+/* Landing Pages */
 .hobs-jumbotron{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/jumbotron2.jpg);
+    background-image: url(./images/nike_blazer_promo-section.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/nike_blazer_promo-section.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 550px;
+    height: 450px;
+}
+
+.hobs-bg-banner {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,107,141,1) 0%, rgba(0,69,91,1) 90% );
+}
+
+.hobs-scrolling-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Sidebar */
+.hobs-sidebar {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #374250;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.hobs-sidebar.open {
+    width: 250px;
+}
+
+/* Content */
+.hobs-content {
+    transition: margin-left .5s;
+    margin-left: 0px;
+}
+.hobs-content.open{
+    width: 100%;
+    margin-left: 250px;
+}
+
+.hobs-sidebar-header {
+    padding: 28px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hobs-sidebar-tittle {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hobs-sidebar-menu {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hobs-sidebar-menu > ul {
+    height: 389.667px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hobs-sidebar-menu ul.menu {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform:  translate3d(0, 0, 0);
+    transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.hobs-sidebar-menu > ul > li {
+    display: block;
+}
+
+.hobs-sidebar-menu ul li.menu-children > span {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.hobs-sidebar-menu ul li.menu-children  a {
+    display: block;
+    padding: 15px 20px;
+    transition: color .3s;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Product Details */
+.hobs-product-gallery {
+    position: relative;
+    padding: 0 15px;
+}
+
+.hobs-product-gallery .hobs-product-tumbnails {
+    display: block;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.hobs-product-gallery .hobs-product-tumbnails > li {
+    display: inline-block;
+    margin: 0 3px 10px;
+}
+
+.hobs-product-gallery .hobs-product-tumbnails > li > span {
+    display: block;
+    width: 94px;
+    overflow: hidden;
+}
+
+/* Product Slider */
+.product-slider {
+    display: flex;
+}
+
+.product-slider img {
+    width: 300px;
+    height: 200px;
+    object-fit:  cover;
+    margin: 0.8rem;
+}
+
+/* Login */
+.hobs-modal-width {
+    width: 100%;
+    max-width: 820px;
+}
+
+/* Register */
+.hobs-login, image {
+    min-height: 100vh;
+}
+
+.hobs-bg-image{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/register-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hobs-login-heading {
+    font-weight: 300;
+}
+  
+.hobs-btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group>input {
+  padding: var(--input-padding-y) var(--input-padding-x);
+  height: auto;
+  border-radius: 2rem;
+}
+
+/* Footer */
+.hobs-footer {
+    position: relative;
+    background-color: #374250;
+    padding: 100px 0 0 0;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
 }

@@ -1,9 +1,19 @@
 :root {
+    /* custom color */
     --main: #0da9ef;
     --secondary: #606975;
     --dark: #222831;
     --light: #dbe2ef;
     --main-dark: #374250;
+
+    /* custom fonts */
+    --f12: 12px;
+    --f14: 14px;
+    --f15: 15px;
+    --f16: 16px;
+
+    /* custom padding */
+    --p2: .5rem !important;
 }
 
 .hobs-main{
@@ -50,4 +60,24 @@
 }
 .hobs-btn-main:focus{
     box-shadow: 0 0 0 0.2rem rgb(55 66 80 / 50%);
+}
+
+.hobs-f12 {
+    font-size: var(--f12);
+}
+
+.hobs-f14 {
+    font-size: var(--f14);
+}
+
+.hobs-f15 {
+    font-size: var(--f15);
+}
+
+.hobs-f16 {
+    font-size: var(--f16);
+}
+
+.hp2 {
+    padding: var(--p2);
 }

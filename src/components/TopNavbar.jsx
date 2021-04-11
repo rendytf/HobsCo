@@ -63,18 +63,13 @@ export class TopNavbar extends Component {
                     </div>
 
                     {/* Site Branding */}
-                    <Link to='/'>
-                        <span className="hobs-branding text-muted font-weight-bold mr-0 mr-md-2">HOBS</span>
+                    <Link to='/' className="hobs-branding font-weight-bold mr-0 mr-md-2">
+                        <span>HOBS</span>
                     </Link>
 
                     {/* Navbar Menu Items */}
                     <div className="navbar-expand hobs-navbar-menu d-none d-md-block">
                         <ul className="navbar-nav flex-row">
-                            <li className="nav-item">
-                                <Link to='/' className="nav-link">
-                                    <span className="text-uppercase">HOME</span>
-                                </Link>
-                            </li>
                             <li className="nav-item">
                                 <a href="/#" className="nav-link">
                                     <span className="text-uppercase">NEW ARRIVALS</span>

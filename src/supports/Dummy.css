@@ -1,0 +1,191 @@
+@font-face{
+    font-family: "helvetica";
+    src: url(./fonts/Helvetica.ttf);
+}
+
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: 0.75rem;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.hobs-clickable-el{
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hobs-navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e7ec;
+    padding: .5rem 1rem;
+}
+
+.hobs-navbar-stuck {
+    box-shadow: 0 3px 25px 0 rgb(47 56 68 / 22%);
+}
+
+.hobs-branding {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.hobs-nav-items{
+    font-weight: 400;
+}
+
+
+
+
+.hobs-login, image {
+    min-height: 100vh;
+}
+
+.hobs-bg-image{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/register-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hobs-login-heading {
+    font-weight: 300;
+}
+  
+.hobs-btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group>input {
+  padding: var(--input-padding-y) var(--input-padding-x);
+  height: auto;
+  border-radius: 2rem;
+}
+
+.hob-navbar {
+    min-height: 4rem;
+    box-shadow: 0 3px 25px 0 rgb(47 56 68 / 22%);
+}
+
+@media (max-width: 767.98px) {
+    .hobs-offcanvas {
+      position: fixed;
+      top: 56px;
+      bottom: 0;
+      width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      background-color: #ffffff;
+      transition: -webkit-transform .3s ease-in-out;
+      transition: transform .3s ease-in-out;
+      transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    .hobs-offcanvas {
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+    }
+  }
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    transition: background-color .5s;
+}
+
+.main {
+    transition: margin-left .5s;
+}
+
+.main-open {
+    transition: margin-left .5s;
+    margin-left: 250px;
+}
+
+.hobs-jumbotron{
+    background-image: url(./images/nike_blazer_promo-section.jpg);
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/nike_blazer_promo-section.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+
+
+.hobs-navbar {
+    min-height: 4rem;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 10%);
+}
+
+@media (max-width: 768px){
+    .hobs-branding {
+        transform: translateX(-50%);
+        left: 50%;
+        position: absolute;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+}
+
+.hobs-sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}

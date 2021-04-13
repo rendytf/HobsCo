@@ -347,10 +347,16 @@
   ],
   "carts": [
     {
-      "id": 4,
-      "id_user": 4,
-      "id_product": 3,
-      "qty": 5
+      "id": 1,
+      "id_user": 3,
+      "id_product": 4,
+      "qty": 1
+    },
+    {
+      "id": 1,
+      "id_user": 3,
+      "id_product": 16,
+      "qty": 1
     }
   ]
 }

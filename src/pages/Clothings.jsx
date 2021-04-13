@@ -111,9 +111,9 @@ export class Clothings extends Component {
         // ambil value
         var category = this.refs.category.value
         var brand = this.refs.brand.value
-
+        var filteredData = this.state.data
         if(!(category === 'all') || !(brand === 'all')){
-            var filteredData = this.state.data.filter((val) => {
+            filteredData = this.state.data.filter((val) => {
                 if(brand === 'all'){
                     return val.category === category
                 }

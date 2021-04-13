@@ -41,7 +41,7 @@ export class App extends Component {
             <Route exact path="/" component={LandingPage} />
             <Route path="/clothings" component={Clothings} />
             <Route path="/brands" component={Brands} />
-            <Route path="/carts" component={Cart} />
+            <Route path="/cart" component={Cart} />
             <Route path="/register" component={Register} />
             <Route path="/create-password" component={CreatePassword} />
             <Route path="/detail-product/:bebas" component={DetailProduct} />
